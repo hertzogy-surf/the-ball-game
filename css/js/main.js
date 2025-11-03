@@ -2,13 +2,17 @@ var gBallWidth = gBallHeight = 100
 
 function onBallClicked(elDiv) {
     
-    if (gBallWidth === 400) {
+
+
+    if (gBallWidth >= 400) {
         gBallWidth = 100
         gBallHeight = 100
     }
     else {
-        gBallWidth += 50
-        gBallHeight += 50
+        var randomGrow = getRandomInt(20, 60)
+
+        gBallWidth += randomGrow
+        gBallHeight += randomGrow
     }
 
     elDiv.style.width = gBallWidth + 'px'
