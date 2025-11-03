@@ -12,4 +12,9 @@ h {
     border-radius: 50%;
     background-color: yellow;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
 }
